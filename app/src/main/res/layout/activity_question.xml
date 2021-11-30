@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QuestionActivity">
+    <fragment
+        android:id="@+id/top_fragment"
+        android:name="com.rightcode.bowelography.fragment.TopFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="TopFragment"
+        tools:layout="@layout/fragment_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_homefocus"
+        app:layout_constraintTop_toBottomOf="@id/top_fragment"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintBottom_toTopOf="@id/tv_start"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="13dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/et_question_title"
+            android:layout_width="match_parent"
+            android:hint="제목을 입력해주세요"
+            android:padding="13dp"
+            android:background="@drawable/color_white_background_border_f1f1f1_corner_13"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내용"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="13dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/et_question_Contents"
+            android:layout_width="match_parent"
+            android:hint="내용을 입력해주세요"
+            android:padding="13dp"
+            android:gravity="top
+"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/color_white_background_border_f1f1f1_corner_13"
+            android:layout_height="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일"
+            android:textSize="16dp"
+            android:layout_marginBottom="13dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/et_question_email"
+            android:layout_width="match_parent"
+            android:hint="이메일을 입력해주세요"
+            android:padding="13dp"
+            android:background="@drawable/color_white_background_border_f1f1f1_corner_13"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="bottom"
+        android:id="@+id/tv_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:textColor="@drawable/text_select"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="등록하기"
+        android:onClick="onButtonClick"
+        android:background="@drawable/button_select"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

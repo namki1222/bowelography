@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/color_pink_fc656a_background_corner_13"/>
+    <item android:drawable="@drawable/color_gray_background_corner_13"/>
+</selector>
+
+
+
+
+
+
+
+

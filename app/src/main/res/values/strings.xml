@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">bowelography</string>
+    <string name="guide_1_1">우리 몸의 70%를 쓸고 내려오는 최고의 건강 보고서,\n 현대판 매화틀 바울로 그라피</string>
+    <string name="guide_1">당신의 대변을 분석해드립니다!</string>
+    <string name="guide_2">이제 바울로그라피에 맡겨주세요!</string>
+    <string name="guide_2_1">나 문제있나...? 우리는 당연하게도....남의 대변을 \n 봐본 적도 없으며, 마땅히 물어볼 곳도 없었습니다.</string>
+    <string name="guide_3">바울로그라피는 회원가입이 없습니다!</string>
+    <string name="guide_3_1">예민한 정보라 찝찝하신가요? 걱정마세요!</string>
+    <string name="guide_4">점수와 관리법부터 일정량 이상 \n 쌓이면 빅데이터 보고서까지!</string>
+    <string name="guide_4_1">특어 출원된 대변 분석 AI 기술과 함께!</string>
+    <string name="survey">더욱 정확한 \n배변활동을 위해 정보를 입력해주세요!</string>
+    <string name="error_msg">잠시 후 다시 시도해주세요</string>
+    <string name="service_use">제6조 (회원가입) \n ① 이용자는 “&lt;이름 &gt;”가 정한 가입 양식에 따라 회원정보를 기입한 후 본 약관에 동의한다는 의사표시를 함으로서 회원가입을 신청합니다.\n ② “&lt;이름 &gt;”는 제1항과 같은 회원가입 신청에 대하여 승낙함으로써 회원가입계약이 성립하며, 다음 각 호 중 어느 하나에 해당하는 이용자의 회원가입 신청에 대해서는 이를 거부할 수 있습니다.\n 1. 가입신청자가 본 약관 제9조 제3항에 의하여 이전에 회원자격을 상실한 적이 있는 경우, 다만 제9조 제3항에 의한 회원자격 상실 후 3년이 경과한 자로서 “&lt;이름 &gt;”의 회원 재가입 승낙을 얻은 경우에는 예외로 합니다.\n 2. 등록 내용에 허위, 기재누락, 오기가 있는 경우\n 3. 기타 회원으로 등록하는 것이 “&lt;이름 &gt;”의 기술상 현저히 지장이 있다고 판단되는 경우\n ③ 회원가입계약의 성립시기는 “&lt;이름 &gt;”의 승낙이 회원에게 도달한 시점으로 합니다.\n ④ 회원은 제6조 제1항에 따라 기입한 등록사항에 변경이 있는 경우, 즉시 전자우편 기타 방법으로 “&lt;이름 &gt;”에 대하여 그 변경사항을 알려야 합니다.\n ⑤ 개인정보 보호를 위하여 만 14세 미만 아동의 회원 가입은 제한됩니다.\n ⑥ 외국인 또는 해외교민은 “회사”가 제공하는 가입조건을 만족할 경우, 가입이 가능합니다.\n 제7조 (회원의 권리)\n ① 회원으로 등록하시면 &lt;이름 &gt;서비스의 모든 메뉴를 제약 없이 사용하실 수 있습니다.\n ② “&lt;이름 &gt;”가 제공하는 다양한 생활정보 서비스와 각종 이벤트에 참가할 자격이 주어집니다.\n ③ &lt;이름 &gt;서비스의 최신정보와 혜택 수신을 원하는 경우에</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="kakao_app_key">e45aa2e673021596bdb3db2bc8cc7e38</string>
+    <string name="kakao_key">kakaoe45aa2e673021596bdb3db2bc8cc7e38</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="report_notice">*대변 사진을 촬영하면 대변 분석과 장 건강 점수, 관리법을 \n 받아보실 수있습니다</string>
+    <string name="poop_color_detail">가장 많이 차지하는 색깔을 선택.\n혹은 초록색, 회색, 검정색, 노랑색의 특이한 색깔이 \n부분적일 때 선택. (빨강색 제외)</string>
+    <string name="extra_report">대변은 내 건강의 결과입니다. 무엇을 고쳐나가야 할 지,\n무엇을 유지해야 할 지 기록하세요!\n나의 하루, 나의 일상은 점점 좋아질 것입니다.</string>
+    <string name="detail_report">정밀 분석은 한 번의 대변보다 훨씬 중요한\n배변 양상과 습관을 분석합니다.\n7일 이상의 대변 촬영과 기록이 있어야 하며 신청해주시면\n이메일을 통해 확인 후 영업일 7일 이내에 발송해드립니다.</string>
+    <string name="default_notification_channel_id">bowelography_Notification_Channel_Id</string>
+    <string name="default_notification_channel_name">푸시 알림</string>
+</resources>

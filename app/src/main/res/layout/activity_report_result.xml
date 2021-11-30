@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.ReportResultActivity">
+    <fragment
+        android:id="@+id/top_fragment"
+        android:name="com.rightcode.bowelography.fragment.TopFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="TopFragment"
+        tools:layout="@layout/fragment_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_homefocus"
+        app:layout_constraintTop_toBottomOf="@id/top_fragment"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/top_fragment"
+        app:layout_constraintBottom_toTopOf="@id/tv_start">
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/capture_view"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="AI분석을 통해 배변 점수가 나왔습니다!"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:textColor="#929292"
+            android:text="고객님과 비슷한 배변분석을 통한 결과입니다."
+            android:layout_marginBottom="10dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/score_background"/>
+            <TextView
+                android:id="@+id/tv_result_score"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="33.5dp"
+                android:textStyle="bold"
+                android:textSize="49dp"
+                android:textColor="#ff6e75"
+                tools:text="0점"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv_text_content"
+            android:layout_marginTop="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="현재 배변이 찰흙상태 입니다.\n식이요법과 꾸준한 물 섭취로 장을 관리해야합니다.\n당분간은 음주와 흡연을 멀리하세요.\n장이 지속적으로 안좋아질 경우, 대장염으로 이어질 수\n있습니다. 꾸준한 노력으로 바올로그라피와 함께 건강한\n장을 가꾸어보아요!"
+            android:padding="15dp"
+            android:textColor="#505050"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="5dp"
+            android:background="@drawable/color_white_background_corner_5_line"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="11dp"
+            android:text="* 분석이 완료된 후의 점수는 수정이 불가능 합니다."
+            android:textColor="#929292"/>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/tv_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="공유하기"
+        android:textColor="@color/white"
+        android:background="@drawable/color_pink_fc656a_background_corner_13"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

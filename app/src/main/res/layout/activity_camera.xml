@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.CameraActivity">
+    <TextureView
+        android:id="@+id/view_camera"
+        app:layout_constraintTop_toBottomOf="@id/zoom"
+        app:layout_constraintBottom_toTopOf="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <fragment
+        android:id="@+id/top_fragment"
+        android:name="com.rightcode.bowelography.fragment.TopFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="TopFragment"
+        tools:layout="@layout/fragment_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <SeekBar
+        android:paddingTop="15dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:thumb="@drawable/seek_tumb"
+        android:progressDrawable="@drawable/seekbar"
+        app:layout_constraintTop_toBottomOf="@id/top_fragment"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/zoom"
+        android:max="7" />
+    <ImageView
+        android:id="@+id/iv_normal_filter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/zoom"
+        app:layout_constraintBottom_toTopOf="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/normal_filter"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="필터 유무와 상관없이, 촬영 이미지는 원본으로 저장됩니다."/>
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_take_black"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/camera_filter_1"/>
+            <ImageView
+                android:id="@+id/iv_take_flash"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/camera_filter_2"/>
+
+            <ImageView
+                android:id="@+id/iv_take_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/take_picture"/>
+
+            <ImageView
+                android:id="@+id/iv_take_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/camera_filter_3"/>
+
+            <ImageView
+                android:id="@+id/iv_take_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/take_guide"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

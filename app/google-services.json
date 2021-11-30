@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "62771621698",
+    "project_id": "bowelography",
+    "storage_bucket": "bowelography.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62771621698:android:3674850c214ddcdd66a2db",
+        "android_client_info": {
+          "package_name": "com.rightcode.bowelography"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62771621698-d6kpklftibo4fmg8js4sikr5s1ljs9dv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rightcode.bowelography",
+            "certificate_hash": "92ad9039d9653d0ba4f6b61096f1dfcdf9d39ad7"
+          }
+        },
+        {
+          "client_id": "62771621698-u29ic0m1add1gfi2ej704a8o5ifvk29t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKY1c4yp-gv_cDGq7g2xekbz68W4rY6H8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62771621698-u29ic0m1add1gfi2ej704a8o5ifvk29t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

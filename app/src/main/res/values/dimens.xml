@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top_bar_height">48dp</dimen>
+
+    <dimen name="pageMargin">40dp</dimen>
+    <dimen name="offset">40dp</dimen>
+    <dimen name="bannerPageMargin">25dp</dimen>
+    <dimen name="bannerOffset">15dp</dimen>
+</resources>
